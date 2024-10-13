@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 폰트 설정 */
+@font-face {
+  font-family: "ladywatermelon";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/assets/fonts/Rix X ladywatermelon Regular.ttf);
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/src/assets/fonts/Pretendard-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 500;
+  src: url(/src/assets/fonts/Pretendard-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  src: url(/src/assets/fonts/Pretendard-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/src/assets/fonts/Pretendard-Bold.woff) format("woff");
+}
+
+/* 전역 스타일 설정 */
+html {
+  font-family: "ladywatermelon";
+}
+li {
+  @apply my-2;
+}
+::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+::-webkit-scrollbar-thumb {
+  @apply h-1/3 bg-indigo-400 rounded-[2px];
+}
+::-webkit-scrollbar-track {
+  @apply bg-white shrink-0 dark:bg-zinc-800;
+}
+
+/* 커스텀 스타일 정의 */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.absolute-y-center {
+  @apply top-1/2 -translate-y-1/2;
+}
+
+.absolute-x-center {
+  @apply left-1/2 -translate-x-1/2;
+}
+
+.link {
+  @apply text-sky-600 dark:text-sky-500 hover:underline;
+}
+.answer-ul {
+  @apply list-disc pl-10;
+}
+.accent {
+  @apply font-bold;
+}
