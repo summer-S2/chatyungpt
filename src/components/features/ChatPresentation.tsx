@@ -16,7 +16,7 @@ export const ChatPresentation = ({
   return (
     <div className="flex flex-col flex-1  pb-8 ">
       {/* 대화 내용 영역 */}
-      <div className="px-3 flex-1 flex flex-col overflow-auto max-h-[calc(100vh-56px-84px)]">
+      <div className="px-3 pb-5 flex-1 flex flex-col overflow-auto max-h-[calc(100vh-56px-84px)]">
         {children}
       </div>
       {/* 입력창 영역 */}
